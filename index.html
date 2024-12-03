@@ -313,14 +313,14 @@
 
 
 <section class="section hero" id="methodology">
-  <div class="container is-fluid">
+  <div class="container is-max-desktop">
     <h2 class="title is-3">Methodology</h2>
     <p class="content">
       The EIDT-V pipeline leverages diffusion intersections to enable frame-based video generation, integrating text and video modules. The text module generates framewise prompts and identifies differences across frames, while the video module uses these prompts to ensure temporal consistency and semantic coherence. Through techniques like grid prompt switching and text-guided attention, the pipeline allows fine-grained control over variance and coherence, achieving high-quality video synthesis using generic diffusion models.
     </p>
     <div class="columns is-vcentered">
-      <!-- Left Image with Caption (Full Width) -->
-      <div class="column is-full">
+      <!-- Left Image with Caption (Slightly Larger) -->
+      <div class="column is-two-thirds">
         <figure>
           <img src="static/images/Pipeline-fig1.png" alt="Overview of the EIDT-V Pipeline for Frame-Based Video Generation" style="width: 100%;">
           <figcaption class="has-text-centered">
@@ -328,20 +328,17 @@
           </figcaption>
         </figure>
       </div>
-    </div>
-    <div class="columns is-vcentered">
+
       <!-- Right Image with Caption -->
-      <div class="column">
+      <div class="column is-one-third">
         <figure>
-          <img src="static/images/fig-grps.png" alt="Grid Prompt Switching with Text-Guided Attention">
+          <img src="static/images/fig-grps.png" alt="Grid Prompt Switching with Text-Guided Attention" style="width: 100%;">
           <figcaption class="has-text-centered">
             <strong>Figure 2:</strong> Grid Prompt Switching with Text-Guided Attention. Controlled transitions enhance motion coherence.
           </figcaption>
         </figure>
       </div>
     </div>
-  </div>
-</section>
   </div>
 </section>
 
