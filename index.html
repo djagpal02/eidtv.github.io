@@ -313,22 +313,23 @@
 
 
 <section class="section hero" id="methodology">
-  <div class="container is-max-desktop">
+  <div class="container is-fluid">
     <h2 class="title is-3">Methodology</h2>
     <p class="content">
       The EIDT-V pipeline leverages diffusion intersections to enable frame-based video generation, integrating text and video modules. The text module generates framewise prompts and identifies differences across frames, while the video module uses these prompts to ensure temporal consistency and semantic coherence. Through techniques like grid prompt switching and text-guided attention, the pipeline allows fine-grained control over variance and coherence, achieving high-quality video synthesis using generic diffusion models.
     </p>
     <div class="columns is-vcentered">
-      <!-- Left Image with Caption -->
-      <div class="column">
+      <!-- Left Image with Caption (Full Width) -->
+      <div class="column is-full">
         <figure>
-          <img src="static/images/Pipeline-fig1.png" alt="Overview of the EIDT-V Pipeline for Frame-Based Video Generation">
+          <img src="static/images/Pipeline-fig1.png" alt="Overview of the EIDT-V Pipeline for Frame-Based Video Generation" style="width: 100%;">
           <figcaption class="has-text-centered">
             <strong>Figure 1:</strong> Overview of the EIDT-V Pipeline. This pipeline integrates text and video modules to generate coherent frames.
           </figcaption>
         </figure>
       </div>
-
+    </div>
+    <div class="columns is-vcentered">
       <!-- Right Image with Caption -->
       <div class="column">
         <figure>
@@ -339,6 +340,8 @@
         </figure>
       </div>
     </div>
+  </div>
+</section>
   </div>
 </section>
 
